@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/main.css">
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <title>Product Landing Page</title>
 </head>
@@ -12,7 +12,7 @@
   <header id="header">
     <div class="container">
       <div class="logo">
-        <img src="#" alt="logo" id="image-header">
+        <h3>logo</h3>
       </div>
       <nav id="nav-bar">
         <ul>
@@ -24,33 +24,42 @@
       </nav>
     </div>
   </header>
-  <section id="about">
-    <div class="container">
-      <video id="video" width="400" autoplay>
-        <source src="/img/Dogs_Park.mp4" type="video/mp4">
-      </video>
-    </div>
+  <main>
+    <section id="hero">
+      <div>
+        <h1>Dog Walking Services</h1>
+        <p>Get your dog walked today</p>
+        <button class="btn" name="button">Contact Us</button>
+      </div>
+    </section>
+    <section id="about">
+      <div>
+        <video id="video" width="200" autoplay>
+          <source src="/img/Dogs_Park.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <section id="services">
+      <div class="box">
+        <h2>Header 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="box">
+        <h2>Header 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="box">
+        <h2>Header 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email...">
+        <input id="submit" type="submit" name="submit">
+      </form>
   </section>
-  <section id="services">
-    <div class="box">
-      <h2>Header 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="box">
-      <h2>Header 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="box">
-      <h2>Header 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-  </section>
-  <section id="contact">
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input id="email" type="email" name="email" placeholder="Enter your email...">
-      <input id="submit" type="submit" name="submit">
-    </form>
-  </section>
+  </main>
 
   <footer id="footer">
     <p>Coded by <a href="#">James</a></p>
