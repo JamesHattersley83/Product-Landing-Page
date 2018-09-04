@@ -1,4 +1,6 @@
-/* Base Element Styles */
+/* ========================
+Base Element Styles 
+=========================== */
 
 * {
   box-sizing: border-box;
@@ -8,32 +10,62 @@ body {
   margin: 0;
   background: #fff;
   font-family: sans-serif;
+  color: #3a3a3a;
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 4em;
+header {
+  background: #3a3a3a;
+  text-align: center;
 }
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
-}
-
-li {
   list-style: none;
 }
 
-a {
+header a,
+nav a {
   text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3 {
+  margin-top: 0;
 }
 
 
+/* ========================
+Base layout Styles 
+=========================== */
 
-/* Base layout Styles */
+/* ---- Navigation ---- */
+
+
+
+
 
 /* Layout Containers */
 
 /* Page Elements */
 
 /* Media Queries */
+
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+  }
+}
+
