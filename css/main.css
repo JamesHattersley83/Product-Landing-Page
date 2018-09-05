@@ -1,21 +1,55 @@
 /* ========================
-Base Element Styles 
+Main Styles 
 =========================== */
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   margin: 0;
-  background: #fff;
   font-family: sans-serif;
   color: #3a3a3a;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-header {
-  background: #3a3a3a;
-  text-align: center;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  padding-top: 2em;
+}
+
+.logo {
+  align-self: center;
+  color: #52bab3;
+  font-size: 1.5em;
+}
+
+.nav {
+  margin-top: 1.5em;
 }
 
 nav ul {
@@ -24,16 +58,20 @@ nav ul {
   list-style: none;
 }
 
-header a,
-nav a {
+.nav a {
   text-decoration: none;
-  color: #fff;
+  color: #797e83;
   display: block;
-  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: center;
+  padding: .4em;
+  border-bottom: 1px solid #ebecec;
 }
 
-nav a:hover {
-  background-color: #555;
+.nav a:hover {
+  color: #0b0b0b;
+  border-bottom-color: #52bab3;
 }
 
 p {
@@ -46,26 +84,46 @@ h3 {
   margin-top: 0;
 }
 
-
-/* ========================
-Base layout Styles 
-=========================== */
-
-/* ---- Navigation ---- */
-
-
-
-
-
-/* Layout Containers */
-
-/* Page Elements */
-
-/* Media Queries */
-
-@media (min-width: 769px) {
-  nav ul {
-    display: flex;
-  }
+#showcase {
+  margin-top: 3em;
+  text-align: center;
 }
 
+#showcase h1 {
+  font-size: 3em;
+}
+
+/* ========================
+Media Queries 
+=========================== */
+
+/* @media (min-width: 769px) {
+  .main-header {
+    height: 200px;
+    justify-content: flex-end;
+  }
+  .nav {
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav a {
+    border-bottom: transparent;
+  }
+} */
+
+@media (min-width: 769px) {
+  .main-header {
+    flex-direction: row;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  .nav {
+    margin-top: 0;
+    flex-direction: row;
+  }
+  .nav a {
+    margin-right: 2em;
+  }
+}

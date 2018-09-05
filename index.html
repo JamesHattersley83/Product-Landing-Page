@@ -9,57 +9,60 @@
   <title>Product Landing Page</title>
 </head>
 <body>
-  <header id="main-header">
-    <h3 class="name"><a href="#">Dog Walks Ltd</a></h3>
-    <nav id="nav-bar">
-      <ul>
-        <li class="nav-link"><a href="index.html">Home</a></li>
+  <div class="container">
+    <!-- header -->
+    <header class="main-header">
+      <a href="/" class="logo">Dog Walking Ltd</a>      
+      <ul class="nav">
         <li class="nav-link"><a href="#about">About</a></li>
         <li class="nav-link"><a href="#services">Services</a></li>
         <li class="nav-link"><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="showcase">
-      <div class="container">
+    </header>
+   <!-- end header -->
+    <main>
+      <section id="showcase">
         <h1>Dog Walking Services</h1>
         <p>Get your dog walked today</p>
         <button class="btn" name="button">Contact Us</button>
-      </div>
-    </section>
-    <section id="about">
-      <div>
-        <video id="video" width="200" autoplay>
-          <source src="/img/Dogs_Park.mp4" type="video/mp4">
-        </video>
-      </div>
-    </section>
-    <section id="services">
-      <div class="box">
-        <h2>Dog Walking</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-      <div class="box">
-        <h2>Dog Sitting</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-      <div class="box">
-        <h2>Pet Training</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </section>
-    <section id="contact">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" name="email" placeholder="Enter your email...">
-        <input id="submit" type="submit" name="submit">
-      </form>
-  </section>
-  </main>
-
-  <footer id="footer">
-    <p>Coded by <a href="#">James Hattersley</a></p>
-  </footer>
-
+      </section>
+      <!-- about -->
+      <section id="about">
+        <div>
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iusto beatae consequuntur aliquam vero totam laborum. Repellat, accusamus nobis necessitatibus excepturi deserunt maiores exercitationem ipsam laudantium ipsum ex vero sint!</p>
+          <video id="video" width="200" autoplay>
+            <source src="/img/Dogs_Park.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+      <!-- services -->
+      <section id="services">
+        <div class="box">
+          <h2>Dog Walking</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <h2>Dog Sitting</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <h2>Pet Training</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </section>
+      <!-- contact -->
+      <section id="contact">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" name="email" placeholder="Enter your email...">
+          <input id="submit" type="submit" name="submit">
+        </form>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+      <p>Coded by <a href="#">James Hattersley</a></p>
+    </footer>
+  </div>
 </body>
 </html>
