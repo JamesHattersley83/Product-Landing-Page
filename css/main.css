@@ -14,6 +14,7 @@ body {
   color: #3a3a3a;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 h1, h2, h3 {
@@ -37,10 +38,9 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
+/* ========================
+Layout Styles 
+=========================== */
 
 /* Header */
 
@@ -51,7 +51,8 @@ a {
 }
 
 .main-header {
-  padding-top: 2em;
+  margin: 2em auto;
+  max-width: 80%;
 }
 
 .logo {
@@ -79,6 +80,7 @@ nav ul {
   text-align: center;
   padding: .4em;
   border-bottom: 1px solid #ebecec;
+  border-bottom-width: 80%;
 }
 
 .nav a:hover {
@@ -91,24 +93,37 @@ nav ul {
 #showcase {
   min-height: 450px;
   text-align: center;
+  color: #fff;
 }
 
 #showcase .bg-img {
   position: absolute;
-  background: url('img/dogs.jpg');
+  background-color: #52bab3;
+  background: url('../img/dogs.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 450px;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 #showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
   font-size: 3em;
+}
+
+.content-wrap {
+  padding: 2em 1.5em;
 }
 
 .btn {
   display: inline-block;
   background: #52bab3;
   color: #fff;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   border: none;
 }
 
@@ -116,11 +131,47 @@ nav ul {
   background: #155752;
 }
 
-/* about */
+/* About */
 
+#about {
+  padding-bottom: 2em;
+}
 
+#video {
+  width: 100%;
+  display: block;
+}
 
+/* Services */
 
+#services {
+  background-color: #52bab3;
+  color: #fff;
+}
+
+#services .card {
+  border: 1px solid white;
+  padding: 1em 0.5em;
+  margin: 1em 0;
+}
+
+/* Contact */
+
+#email{
+  padding: .5em 1em;
+  margin: 0 1em;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+}
 
 /* ========================
 Media Queries 
@@ -139,5 +190,12 @@ Media Queries
   }
   .nav a {
     margin-right: 2em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .content-wrap {
+    grid-column: 2/4;
   }
 }
