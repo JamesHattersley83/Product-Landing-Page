@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
   <title>Product Landing Page</title>
 </head>
 <body>
   <div class="container">
   <!-- header -->
-  <header class="main-header">
-    <a href="/" class="logo">Dog Walking Ltd</a>      
-    <ul class="nav">
-      <li class="nav-link"><a href="#about">About</a></li>
-      <li class="nav-link"><a href="#services">Services</a></li>
-      <li class="nav-link"><a href="#contact">Contact</a></li>
-    </ul>
+  <header id="header">
+    <img id="header-img" src="#" alt="logo">
+    <nav id="nav-bar">
+      <ul>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="#services">Services</a></li>
+        <li class="nav-link"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <!-- end header -->
   <main id="main">
@@ -32,20 +34,22 @@
       </div>
     </section>
     <!-- about -->
-    <section id="about">
+    <section id="about" class="grid">
       <div class="content-wrap">
+      <div id="about-text">
         <h2>About Our Company</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iusto beatae consequuntur aliquam vero totam laborum. Repellat, accusamus nobis necessitatibus excepturi deserunt maiores exercitationem ipsam laudantium ipsum ex vero sint!</p>
-        <div class="video-section">
-          <video id="video" autoplay>
-            <source src="/img/Dogs_Park.mp4" type="video/mp4">
-          </video>
-        </div>
       </div>
+      <div id="video-section">
+        <video id="video" autoplay>
+          <source src="/img/Dogs_Park.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
     </section>
     <!-- services -->
     <section id="services">
-      <div class="content-wrap">
+      <div class="main-content">
         <h2>Our Services</h2>
         <ul>
           <li>
@@ -86,5 +90,6 @@
     <p>Coded by <a href="#">James Hattersley</a></p>
   </footer>
 </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

@@ -44,34 +44,37 @@ Layout Styles
 
 /* Header */
 
-.main-header,
-.nav {
+#header,
+nav ul {
   display: flex;
   flex-direction: column;
 }
 
-.main-header {
+#header {
   margin: 2em auto;
   max-width: 80%;
 }
 
-.logo {
+#header-img {
   align-self: center;
   color: #52bab3;
   font-size: 1.5em;
 }
 
-.nav {
+#nav-bar {
   margin-top: 1.5em;
+  /* position: fixed;
+  top: 0;
+  overflow: hidden; */
 }
 
-nav ul {
+#nav-bar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav a {
+#nav-bar a {
   text-decoration: none;
   color: #797e83;
   display: block;
@@ -83,7 +86,7 @@ nav ul {
   border-bottom-width: 80%;
 }
 
-.nav a:hover {
+#nav-bar a:hover {
   color: #0b0b0b;
   border-bottom-color: #52bab3;
 }
@@ -178,24 +181,17 @@ Media Queries
 =========================== */
 
 @media (min-width: 769px) {
-  .main-header {
+  #header {
     flex-direction: row;
   }
   .logo {
     margin-right: auto;
   }
-  .nav {
+  #nav-bar ul {
     margin-top: 0;
     flex-direction: row;
   }
-  .nav a {
+  #nav-bar ul a {
     margin-right: 2em;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .content-wrap {
-    grid-column: 2/4;
   }
 }
