@@ -52,20 +52,24 @@ nav ul {
 
 #header {
   margin: 2em auto;
-  max-width: 80%;
+  border: 1px solid red;
 }
 
 #header-img {
   align-self: center;
   color: #52bab3;
   font-size: 1.5em;
+  padding-top: 1em;
 }
 
 #nav-bar {
-  margin-top: 1.5em;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  overflow: hidden; */
+  left: 0;
+  right: 0;
+  width:100%;
+  z-index: 9999;
+  background-color: #fff;
 }
 
 #nav-bar ul {
@@ -94,6 +98,7 @@ nav ul {
 /* Showcase */
 
 #showcase {
+  margin-top: 20px;
   min-height: 450px;
   text-align: center;
   color: #fff;
